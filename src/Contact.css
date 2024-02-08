@@ -1,0 +1,31 @@
+.Contact{
+	background-color: darkgoldenrod;
+	.icons{
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		margin: auto;
+	}
+    .icon{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background-color: black;
+        border-radius: 35px;
+        color: white;
+    }
+    .lkdn-icon{
+        font-size: 18px;
+    }
+    .mail-icon{
+        font-size: 20px;
+    }
+    .gh-icon{
+        font-size: 37px;
+        background-color: white;
+        color: black;
+    }
+}

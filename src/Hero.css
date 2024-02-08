@@ -1,0 +1,70 @@
+.Hero{
+    background-color: darkgray;
+    height: calc(300vh);
+    .hero{
+        will-change: background-size;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: calc(100vh);
+        background: url('./media/ibiza.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .hero-front{
+        will-change: background-size;
+        width: 100%;
+        height: calc(100vh);
+        background: url('./media/foreground.png') no-repeat 50% 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 10;
+    }
+    .hero-title{
+        will-change: opacity;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 100vh;
+    }
+    .hero-title h1{
+        font-family: 'Henny Penny';
+        font-size: 65px;
+    }
+    .hero-title h3{
+        font-family: 'Mr Dafoe';
+        font-size: 20px;
+    }
+    .hero-about{
+        will-change: opacity;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 100vh;
+        z-index: 15;
+        font-family: 'Montserrat';
+    }
+    .hero-about h2{
+        font-size: 40px;
+        margin-bottom: 180px;
+    }
+    .hero-about p{
+        max-width: 40%;
+        font-size: 16px;
+    }
+}
