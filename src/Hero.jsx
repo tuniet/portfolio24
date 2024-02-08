@@ -1,6 +1,6 @@
 import './Hero.css';
 import React, {useState, useEffect} from 'react';
-
+import scrollicon from './media/scroll.gif'
 
 function Hero() {
   const [zoomin, setzoomin] = useState('120%')
@@ -8,6 +8,7 @@ function Hero() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [titleopacity, settitleopacity] = useState(1)
   const [aboutopacity, setaboutopacity] = useState(0)
+  const [foregroundopacity, setforegroundopacity] = useState(0)
   const [aboutdistance, setaboutdistance] = useState('100px')
   const handleScroll = () => {
     const position = window.scrollY;
@@ -39,15 +40,20 @@ function Hero() {
     if(scrollPosition >= 800) {setaboutopacity(1);setaboutdistance('50px')}
     if(scrollPosition >= 900) setaboutdistance('40px')
     if(scrollPosition >= 1000) setaboutdistance('30px')
+    if(scrollPosition < 1300) setforegroundopacity(0)
+    if(scrollPosition >= 1400) setforegroundopacity(.40)
+    if(scrollPosition >= 1500) setforegroundopacity(.60)
+    if(scrollPosition >= 1600) setforegroundopacity(.80)
+    if(scrollPosition >= 1700) setforegroundopacity(.90)
+    if(scrollPosition >= 1800) setforegroundopacity(1)
 
-
-    console.log(scrollPosition)
   }, [scrollPosition])
 
   return (
     <div className="section Hero">
-      <div className='hero' style={{backgroundSize: zoomin}}>
+      <div className='hero-paralax' style={{backgroundSize: zoomin}}>
         <div className='hero-front' style={{backgroundSize: zoomout}}></div>
+        <div className='hero-foreground' style={{opacity: foregroundopacity}}></div>
         <div className='hero-title' style={{opacity: titleopacity}}>
           <h3>Full-stack web developer &nbsp; & designer</h3>
           <h1>TONI FDEZ</h1>
@@ -58,6 +64,7 @@ function Hero() {
             I thrive to learn new technologies & explore new design concepts. i'd love to work together, if u want just <a href='#contact'>let me know</a>
           </p>
         </div>
+        <div className='scroll-icon' style={{opacity: titleopacity}}><img src={scrollicon} alt='' /></div>
       </div>
       <div className='hero-content'>
         <h1 className='section-title'>Hero</h1>

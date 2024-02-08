@@ -1,7 +1,7 @@
 .Hero{
     background-color: darkgray;
-    height: calc(300vh);
-    .hero{
+    height: calc(3000px);
+    .hero-paralax{
         will-change: background-size;
         position: sticky;
         top: 0;
@@ -38,10 +38,13 @@
     .hero-title h1{
         font-family: 'Henny Penny';
         font-size: 65px;
+        margin: 0;
     }
     .hero-title h3{
         font-family: 'Mr Dafoe';
         font-size: 20px;
+        margin: 0;
+        font-weight: 100
     }
     .hero-about{
         will-change: opacity;
@@ -60,11 +63,37 @@
         font-family: 'Montserrat';
     }
     .hero-about h2{
+        will-change: margin-bottom;
         font-size: 40px;
         margin-bottom: 180px;
     }
     .hero-about p{
         max-width: 40%;
         font-size: 16px;
+        a{
+            color: white;
+            font-weight: bold
+        }
+    }
+    .scroll-icon{
+        will-change: opacity;
+        display: flex;
+        position: absolute;
+        bottom: 50px;
+        justify-content: center;
+        width: 100%;
+        z-index: 20;
+    }
+    .scroll-icon img{
+        width: 50px;
+    }
+    .hero-foreground{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh);
+        background-color: black;
+        z-index: 25;
+        opacity: 0;
+        will-change: opacity;
     }
 }
