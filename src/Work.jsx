@@ -1,35 +1,26 @@
-import { useState } from 'react';
 import Card from './Card';
 import './Work.css';
+import meraki from './media/meraki.png'
+import tunietgames from './media/tuniet-games.png'
+import nobelnest from './media/nobelnest.png'
+import gymapp from './media/gymapp.png'
+import architecture from './media/architecture.png'
+import pomodoro from './media/pomodoro.png'
+import reacti from './media/react.svg'
 
 function Work() {
-  const [selected, setSelected] = useState(1)
-
-  function cardContent(){
-    return(
-      <div className='info'>
-        <h4>CARD 1</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ante vehicula, lobortis urna eu, maximus elit. Sed semper, enim sit amet aliquam euismod, lectus eros commodo neque, sed cursus erat augue vitae nisl.</p>
-      </div>
-    )
-  }
-
-  function handleChange(e){
-    setSelected(e.target.value)
-  }
   return (
     <div className="section Work">
         <h1 className='section-title'>Work</h1>
-        <section className='cards'>
-          <input type='radio' name='slide' id ="c1" value={1} checked onChange={handleChange} />
-          <Card content={cardContent()} number={1}/>
-          <input type='radio' name='slide' id ="c2" value={2} checked={selected === 2} onChange={handleChange} />
-          <Card content={cardContent()} number={2}/>
-          <input type='radio' name='slide' id ="c3" value={3} checked={selected === 3} onChange={handleChange} />
-          <Card content={cardContent()} number={3}/>
-          <input type='radio' name='slide' id ="c4" value={4} checked={selected === 4} onChange={handleChange} />
-          <Card content={cardContent()} number={4}/>
-        </section>
+        <div className="cards">
+          <Card img={meraki} title={"MERAKI"} desc={"Meraki is a fictional but fully working clothing ecommerce"} roles={["UX/UI Designer", "Backend Developer", "Frontend Developer"]} tags={[reacti]}/>
+          <Card img={tunietgames} title={"TUNIET GAMES"} desc={"Tuniet games is a personal website where I publish small web games I build to keep learning new stuff"} roles={["UX/UI Designer", "Backend Developer", "Frontend Developer"]} tags={[reacti]}/>
+          <Card img={nobelnest} title={"NOBEL NEST"} desc={"Nobel Nest is a fictional & functional hotel website"} roles={["UX/UI Designer", "Backend Developer", "Frontend Developer"]} tags={[reacti]}/>
+          <Card img={architecture} title={"WIP"} desc={"XXXXX is a web app to help people keep track of their progress in the gym"} roles={["UX/UI Designer", "Backend Developer", "Frontend Developer"]} tags={[reacti]}/>
+          <Card img={gymapp} title={"WIP"} desc={"XXXXX is a architecture studio website"} roles={["UX/UI Designer", "Backend Developer", "Frontend Developer"]} tags={[reacti]}/>
+          <Card img={pomodoro} title={"WIP"} desc={"XXXXX is a web app to help people maintain focus during long sesions of study or code, with a all in one place tool"} roles={["UX/UI Designer", "Backend Developer", "Frontend Developer"]} tags={[reacti]}/>
+          </div>
+        
     </div>
   );
 }

@@ -1,20 +1,19 @@
 import './Card.css';
-import img from './media/meraki.webp'
-
 function Card(props) {
-  function Content(){
-    return props.content
-  }
-  let id = 'c' + props.number
 
   return (
-    <div className='cards'>
-      <label htmlFor={id} className='card' style={{}}>
-        <div className='row'>
-          <div className='icon'>{props.number}</div>
-          <Content />
+    <div className='card'>
+      <img src={props.img} alt='' />
+      <div className="info">
+        <h4>{props.title}</h4>
+        <p>{props.desc}</p>
+        <div className='role'>
+          
         </div>
-      </label>
+        <div className='tags'>
+
+        </div>
+      </div>
     </div>
   );
 }

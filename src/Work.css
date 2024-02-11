@@ -1,15 +1,14 @@
 .Work{
     background-color: black;
     color: white;
-    height: 120vh;
+    height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-bottom: 200px;
 }
 .cards{
-    height: 400px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
