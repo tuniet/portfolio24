@@ -61,7 +61,7 @@ function Hero() {
         <div className='hero-about' style={{opacity: aboutopacity}}>
           <h2 style={{marginBottom: aboutdistance}}>About me</h2>
           <p>Hey there!, I'm Toni Fernandez, I was born in Ibiza and I'm currently based in Madrid. I've always had passion for both art & technology, so it was an obvious choice to become a full-stack web developer & designer.
-            I thrive to learn new technologies & explore new design concepts. i'd love to work together, if u want just <a href='#contact'>let me know</a>
+            I thrive to learn new technologies & explore new design concepts. i'd love to work together, if u want just <a href='#Contact'>let me know</a>
           </p>
         </div>
         <div className='scroll-icon' style={{opacity: titleopacity}}><img src={scrollicon} alt='' /></div>

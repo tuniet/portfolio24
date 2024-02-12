@@ -1,31 +1,40 @@
 .Contact{
-	background-color: darkgoldenrod;
+	background-color: rgb(15, 15, 15);
+    color: white;
+    padding-bottom: 200px;
 	.icons{
+        margin-top: 90px !important;
 		display: flex;
 		justify-content: space-around;
 		width: 50%;
 		margin: auto;
 	}
     .icon{
-
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 35px;
-        height: 35px;
-        background-color: black;
+        width: 50px;
+        height: 50px;
+        background-color: white;
         border-radius: 35px;
-        color: white;
+        color: rgb(15, 15, 15);
     }
     .lkdn-icon{
-        font-size: 18px;
+        font-size: 25px;
     }
     .mail-icon{
-        font-size: 20px;
+        font-size: 28px;
     }
     .gh-icon{
-        font-size: 37px;
-        background-color: white;
-        color: black;
+        font-size: 50px;
+        background-color: rgb(15, 15, 15);;
+        color: white;
+    }
+    .icon:hover{
+        transform: scale(1.1);
+    }
+    a{
+        color: white;
+        font-weight: bold
     }
 }

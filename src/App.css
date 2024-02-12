@@ -1,13 +1,13 @@
 .App {
   text-align: center;
-  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat'; 
 }
-.section-title{
-  font-size: 48px;
-  margin: 0;
-  margin-bottom: 20px;
-}
-.section{
-  scroll-snap-align: start;
-  height: 100vh;
+.section-header{
+  margin-bottom: 40px;
+  h1{
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }

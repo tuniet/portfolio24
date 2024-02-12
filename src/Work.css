@@ -1,5 +1,5 @@
 .Work{
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     color: white;
     height: 100%;
     width: 100%;
@@ -8,6 +8,7 @@
 }
 .cards{
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
