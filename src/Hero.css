@@ -97,3 +97,10 @@
         pointer-events: none;
     }
 }
+@media only screen and (max-width: 768px) {
+    .Hero{
+        .hero-about p{
+            max-width: 80%;
+        }
+    }
+}

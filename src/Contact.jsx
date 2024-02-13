@@ -10,11 +10,11 @@ function Contact() {
           <p>You can check the code of this portfolio and the rest of my projects through <a href = 'https://github.com/tuniet' target="_blank" rel='noreferrer'>Github</a>.</p>
         </div>
         <div className='icons'>
-        <a href='https://www.linkedin.com/in/antonio-fern%C3%A1ndez-juan-496ab4254/' rel='noreferrer' target="_blank" className='icon lkdn-icon'>
-            <FaLinkedinIn  />
-        </a>
         <a href='mailto:tofeju@gmail.com' target="_blank" rel='noreferrer' className='icon mail-icon'>
             <FaEnvelope />
+        </a>
+        <a href='https://www.linkedin.com/in/antonio-fern%C3%A1ndez-juan-496ab4254/' rel='noreferrer' target="_blank" className='icon lkdn-icon'>
+            <FaLinkedinIn  />
         </a>
         <a href = 'https://github.com/tuniet' target="_blank" rel='noreferrer'  className='icon gh-icon'>
             <FaGithub />
@@ -24,4 +24,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contact; 

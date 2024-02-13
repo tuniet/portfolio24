@@ -24,8 +24,14 @@ function Hero() {
   }, []);
 
   useEffect(() => {
-    setzoomin(120 + (scrollPosition / 70) + '%')
-    setzoomout(110 + (scrollPosition / 20) + '%')
+    if(window.innerWidth < 768){
+      setzoomin(400 + (scrollPosition / 70) + '%')
+      setzoomout(350 + (scrollPosition / 20) + '%')
+    }
+    else{
+      setzoomin(120 + (scrollPosition / 70) + '%')
+      setzoomout(110 + (scrollPosition / 20) + '%')
+    }
   }, [scrollPosition])
 
   useEffect(() => {
@@ -60,15 +66,11 @@ function Hero() {
         </div>
         <div className='hero-about' style={{opacity: aboutopacity}}>
           <h2 style={{marginBottom: aboutdistance}}>About me</h2>
-          <p>Hey there!, I'm Toni Fernandez, I was born in Ibiza and I'm currently based in Madrid. I've always had passion for both art & technology, so it was an obvious choice to become a full-stack web developer & designer.
-            I thrive to learn new technologies & explore new design concepts. i'd love to work together, if u want just <a href='#Contact'>let me know</a>
+          <p>Hey there!, I'm Toni Fernandez, I was born in Ibiza and based in Madrid. I've always had passion for both art & technology, so it was an obvious choice to become a full-stack web developer & designer.
+            I thrive to learn new technologies & explore new design concepts. I'd love to work together, if u want just <a href='#Contact'>let me know</a>
           </p>
         </div>
         <div className='scroll-icon' style={{opacity: titleopacity}}><img src={scrollicon} alt='' /></div>
-      </div>
-      <div className='hero-content'>
-        <h1 className='section-title'>Hero</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis eleifend varius. Morbi et odio nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque lorem dui, porta at lacus et, ultricies lacinia lorem. Sed eget facilisis nulla, id sodales justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dignissim eget urna eu sodales.</p>
       </div>
     </div>
   );
