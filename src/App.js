@@ -10,7 +10,6 @@ function App() {
       <Hero />
       <Work />
       <Contact />
-      <WorkCardExp />
     </div>
   );
 }
