@@ -9,7 +9,6 @@ import pomodoro from './media/pomodoro.png'
 import reacti from './media/react.svg'
 import htmli from './media/html.svg'
 import cssi from './media/css.svg'
-import jsi from './media/js.svg'
 
 function Work() {
   return (
