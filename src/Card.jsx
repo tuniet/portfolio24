@@ -2,7 +2,7 @@ import './Card.css';
 function Card(props) {
 
   return (
-    <div className='card'>
+    <div className={'card ' + props.disable}>
       <img src={props.img} alt='' />
       <div className='card-front'></div>
       <div className="info">
