@@ -28,6 +28,14 @@ function Hero() {
       setzoomin(400 + (scrollPosition / 70) + '%')
       setzoomout(350 + (scrollPosition / 20) + '%')
     }
+    else if(window.innerWidth < 1200){
+      setzoomin(220 + (scrollPosition / 70) + '%')
+      setzoomout(190 + (scrollPosition / 20) + '%')
+    }
+    else if(window.innerWidth < 1500){
+      setzoomin(180 + (scrollPosition / 70) + '%')
+      setzoomout(160 + (scrollPosition / 20) + '%')
+    }
     else{
       setzoomin(120 + (scrollPosition / 70) + '%')
       setzoomout(110 + (scrollPosition / 20) + '%')

@@ -97,10 +97,23 @@
         pointer-events: none;
     }
 }
+
+/*THE REST OF THE RESPONSIVE IS HANDLED IN THE HERO.JSX*/
+@media only screen and (max-width: 1200px) {
+    .Hero{
+        .hero-front{
+            background: none;
+        }
+    }
+
+}
 @media only screen and (max-width: 768px) {
     .Hero{
         .hero-about p{
             max-width: 80%;
+        }
+        .hero-front{
+            background: none;
         }
     }
 }

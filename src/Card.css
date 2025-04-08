@@ -3,6 +3,7 @@
     height: 70vh;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
     img{
         object-fit: cover;
         width: 100%;
@@ -51,7 +52,7 @@
         opacity: 0;
         background-color: black;
         z-index: 10;
-        transition: opacity .8s; 
+        transition: opacity .8s;
     }
 }
 .card:hover{
@@ -99,4 +100,5 @@
     }
     filter: grayscale(1);
     pointer-events: none;
+    cursor: none;
 }

@@ -1,8 +1,14 @@
 import './Card.css';
 function Card(props) {
-
   return (
-    <div className={'card ' + props.disable}>
+    <div className={'card ' + props.disable} onClick={(event) =>
+      {
+        event.preventDefault();
+        if(props.url !== "")
+        {
+          window.open(`https://${props.url}`, "_blank");
+        }
+      }}>
       <img src={props.img} alt='' />
       <div className='card-front'></div>
       <div className="info">
