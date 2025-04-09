@@ -21,7 +21,7 @@ function Work() {
         <div className="cards">
           <Card img={meraki} title={"MERAKI"} desc={"Meraki is a fictional clothing ecommerce"} roles={"Frontend Dev & UX/UI Designer"} tags={[htmli, cssi, reacti]} disable="" url="merakishop.netlify.app"/>
           <Card img={tunietgames} title={"TUNIET GAMES"} desc={"Tuniet games is a personal website where I publish small web games"} roles={"Frontend Dev & UX/UI Designer"} tags={[htmli, cssi, reacti]} disable="" url=""/>
-          <Card img={nobelnest} title={"NOBEL NEST"} desc={"Nobel Nest is a fictional hotel website"} roles={"Frontend Dev & UX/UI Designer"} tags={[htmli, cssi, reacti]} disable="" url=""/>
+          <Card img={nobelnest} title={"NEPTUNE HOTEL"} desc={"Neptune Hotel is a fictional hotel website"} roles={"Frontend Dev & UX/UI Designer"} tags={[htmli, cssi, reacti]} disable="" url="neptunehotel.netlify.app"/>
           <Card img={architecture} title={"WIP"} desc={"XXXXX is a architecture studio website"}  roles={"Frontend Dev & UX/UI Designer"} tags={[htmli]} disable={"disable"} url=""/>
           <Card img={gymapp} title={"WIP"} desc={"XXXXX is a web app to help people keep track of their progress in the gym"} roles={"Frontend Dev & UX/UI Designer"} tags={[htmli]} disable={"disable"} url=""/>
           <Card img={pomodoro} title={"WIP"} desc={"XXXXX is a web app to help people maintain focus during long sesions of study or coding, with a all in one place tool"} roles={"Frontend Dev & UX/UI Designer"} tags={[htmli]} disable={"disable"} url=""/>
